@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean class="srtestMavenByUday.Maven1.Student" id="s"  >
+    <property name="name" value="sharan"></property>
+    </bean>
+    <bean class="srtestMavenByUday.Maven1.College" id="c">
+    <property name="name" value="Jspiders"></property>
+    <property name="std" ref="s"></property>
+    </bean>
+    </beans>
